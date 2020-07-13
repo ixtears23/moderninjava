@@ -9,15 +9,19 @@ public class Sample {
     public static void main(String[] args) {
 
         List<Apple> inventory = new ArrayList<>();
-        inventory.add(new Apple(Color.GREEN));
-        inventory.add(new Apple(Color.RED));
-        inventory.add(new Apple(Color.GREEN));
+        inventory.add(new Apple(Color.GREEN, 150));
+        inventory.add(new Apple(Color.RED, 200));
+        inventory.add(new Apple(Color.GREEN, 80));
 
         List<Apple> apples = Sample.filterGreenApples(inventory);
         apples.forEach((Apple apple) -> { apple.getColor(); });
 
         List<Apple> greenApples = filterApplesByColor(inventory, Color.GREEN);
         List<Apple> redApples = filterApplesByColor(inventory, Color.RED);
+        List<Apple> redAndHeavyApples = filterApples2(inventory, new AppleRedAndHeavyPredicate());
+
+        prettyPrintApple(inventory, new AppleWeightPrint());
+        prettyPrintApple(inventory, new AppleHeavyAndLightPrint());
     }
 
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
@@ -70,5 +74,12 @@ public class Sample {
             }
         }
         return result;
+    }
+
+    public static void prettyPrintApple(List<Apple> inventory, ApplePrint p) {
+        for (Apple apple: inventory) {
+            String print = p.execute(apple);
+            System.out.println(print);
+        }
     }
 }
