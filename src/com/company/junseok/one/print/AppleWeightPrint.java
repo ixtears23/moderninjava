@@ -1,6 +1,6 @@
-package com.company.junseok.one;
+package com.company.junseok.one.print;
 
-import java.util.List;
+import com.company.junseok.one.Apple;
 
 public class AppleWeightPrint implements ApplePrint {
     @Override

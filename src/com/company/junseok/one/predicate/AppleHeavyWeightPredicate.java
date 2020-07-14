@@ -1,4 +1,6 @@
-package com.company.junseok.one;
+package com.company.junseok.one.predicate;
+
+import com.company.junseok.one.Apple;
 
 public class AppleHeavyWeightPredicate implements ApplePredicate{
     @Override
