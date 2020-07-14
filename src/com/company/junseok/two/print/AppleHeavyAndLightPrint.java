@@ -1,6 +1,6 @@
-package com.company.junseok.one.print;
+package com.company.junseok.two.print;
 
-import com.company.junseok.one.Apple;
+import com.company.junseok.two.Apple;
 
 public class AppleHeavyAndLightPrint implements ApplePrint {
     @Override

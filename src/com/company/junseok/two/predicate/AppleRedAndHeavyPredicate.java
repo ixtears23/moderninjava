@@ -1,7 +1,7 @@
-package com.company.junseok.one.predicate;
+package com.company.junseok.two.predicate;
 
-import com.company.junseok.one.Apple;
-import com.company.junseok.one.Color;
+import com.company.junseok.two.Apple;
+import com.company.junseok.two.Color;
 
 public class AppleRedAndHeavyPredicate implements ApplePredicate {
     @Override

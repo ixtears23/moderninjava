@@ -1,6 +1,6 @@
-package com.company.junseok.one.formatter;
+package com.company.junseok.two.formatter;
 
-import com.company.junseok.one.Apple;
+import com.company.junseok.two.Apple;
 
 public class AppleFancyFormatter implements AppleFormatter {
     @Override

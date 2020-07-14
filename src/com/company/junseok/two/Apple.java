@@ -1,6 +1,4 @@
-package com.company.junseok.one;
-
-import java.util.Objects;
+package com.company.junseok.two;
 
 public class Apple {
 
