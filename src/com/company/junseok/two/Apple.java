@@ -1,5 +1,7 @@
 package com.company.junseok.two;
 
+import java.util.Objects;
+
 public class Apple {
 
     private Color color;
@@ -40,4 +42,8 @@ public class Apple {
                 color == apple.color;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, weight);
+    }
 }

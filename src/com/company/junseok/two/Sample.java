@@ -29,7 +29,7 @@ public class Sample {
         inventory.add(new Apple(Color.GREEN, 80));
 
         List<Apple> apples = Sample.filterGreenApples(inventory);
-        apples.forEach((Apple apple) -> { apple.getColor(); });
+        apples.forEach(Apple::getColor);
 
         List<Apple> greenApples = filterApplesByColor(inventory, Color.GREEN);
         List<Apple> redAndHeavyApples = filterApples2(inventory, new AppleRedAndHeavyPredicate());
